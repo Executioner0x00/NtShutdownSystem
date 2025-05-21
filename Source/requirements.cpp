@@ -1,5 +1,4 @@
-// YOU MUST NEED THIS
-// JUST IN CASE.
+// You may need this, just in case.
 
 typedef enum _SHUTDOWN_ACTION {
 	ShutdownNoReboot = 0,
