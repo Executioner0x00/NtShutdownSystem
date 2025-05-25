@@ -18,7 +18,7 @@ INT main() {
 	}
 
 	BOOLEAN previousValue;
-	NTSTATUS status = pRtlAdjustPrivilege(19, TRUE, FALSE, &previousValue);
+	NTSTATUS status = pRtlAdjustPrivilege(19 /* SeShutdownPrivilege */, TRUE, FALSE, &previousValue);
 
 	if (status == 0) {
 		NtShutdownSystem(2);
